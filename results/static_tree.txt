@@ -1,0 +1,46 @@
+|--- frequency <= 1.50
+|   |--- recency <= 20.50
+|   |   |--- age_in_memory <= 6.50
+|   |   |   |--- age_in_memory <= 3.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- age_in_memory >  3.50
+|   |   |   |   |--- class: 0
+|   |   |--- age_in_memory >  6.50
+|   |   |   |--- recency <= 13.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  13.50
+|   |   |   |   |--- class: 0
+|   |--- recency >  20.50
+|   |   |--- recency <= 41.50
+|   |   |   |--- recency <= 28.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  28.50
+|   |   |   |   |--- class: 0
+|   |   |--- recency >  41.50
+|   |   |   |--- recency <= 56.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  56.50
+|   |   |   |   |--- class: 0
+|--- frequency >  1.50
+|   |--- frequency <= 5.50
+|   |   |--- frequency <= 3.50
+|   |   |   |--- last_gap <= 29.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- last_gap >  29.50
+|   |   |   |   |--- class: 1
+|   |   |--- frequency >  3.50
+|   |   |   |--- age_in_memory <= 90.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- age_in_memory >  90.50
+|   |   |   |   |--- class: 1
+|   |--- frequency >  5.50
+|   |   |--- frequency <= 13.50
+|   |   |   |--- frequency <= 8.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- frequency >  8.50
+|   |   |   |   |--- class: 1
+|   |   |--- frequency >  13.50
+|   |   |   |--- age_in_memory <= 9973.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- age_in_memory >  9973.50
+|   |   |   |   |--- class: 0

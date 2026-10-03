@@ -1,0 +1,10 @@
+{
+  "premature_eviction_rate_after_shift": {
+    "LRU": 0.04919459059168584,
+    "Learned_static": 0.10810249487880015
+  },
+  "mean_stale_protected_pages_after_shift": 12.21955689010289,
+  "frames": 32,
+  "window_K": 16,
+  "seeds": 10
+}

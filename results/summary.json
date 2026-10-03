@@ -1,0 +1,99 @@
+{
+  "main": {
+    "FIFO": {
+      "hit_before": 0.5268,
+      "hit_after": 0.38289999999999996,
+      "drop_pp": 14.390000000000008,
+      "faults_before": 4732.0,
+      "faults_after": 6171.0,
+      "gap_to_opt_after_pp": 20.849
+    },
+    "LRU": {
+      "hit_before": 0.6053599999999999,
+      "hit_after": 0.38419,
+      "drop_pp": 22.116999999999994,
+      "faults_before": 3946.4,
+      "faults_after": 6158.1,
+      "gap_to_opt_after_pp": 20.72
+    },
+    "OPT": {
+      "hit_before": 0.71097,
+      "hit_after": 0.59139,
+      "drop_pp": 11.958000000000002,
+      "faults_before": 2890.3,
+      "faults_after": 4086.1,
+      "gap_to_opt_after_pp": 0.0
+    },
+    "Learned-static": {
+      "hit_before": 0.6732700000000001,
+      "hit_after": 0.34223,
+      "drop_pp": 33.10400000000001,
+      "faults_before": 3267.3,
+      "faults_after": 6577.7,
+      "gap_to_opt_after_pp": 24.916
+    },
+    "Learned-adaptive": {
+      "hit_before": 0.69201,
+      "hit_after": 0.36043000000000003,
+      "drop_pp": 33.158,
+      "faults_before": 3079.9,
+      "faults_after": 6395.7,
+      "gap_to_opt_after_pp": 23.095999999999993
+    }
+  },
+  "model_info": {
+    "16": {
+      "train_rows": 248624,
+      "positive_rate": 0.4413813630220735,
+      "importances": {
+        "recency": 0.00852306046631114,
+        "frequency": 0.9882742003678893,
+        "age_in_memory": 0.0021966941806803066,
+        "last_gap": 0.0010060449851192856
+      }
+    },
+    "32": {
+      "train_rows": 376768,
+      "positive_rate": 0.3339800620010192,
+      "importances": {
+        "recency": 0.004223057911134972,
+        "frequency": 0.993869816283832,
+        "age_in_memory": 0.0011628554638774809,
+        "last_gap": 0.0007442703411555766
+      }
+    },
+    "64": {
+      "train_rows": 607616,
+      "positive_rate": 0.2101211949652412,
+      "importances": {
+        "recency": 0.0005580042040127415,
+        "frequency": 0.05438706261290997,
+        "age_in_memory": 0.00567091898580743,
+        "last_gap": 0.9393840141972698
+      }
+    }
+  },
+  "adaptive_retrains_mean": 19.0,
+  "retrain_interval_sensitivity": {
+    "500": {
+      "hit_before": 0.69074,
+      "hit_after": 0.36499000000000004
+    },
+    "1000": {
+      "hit_before": 0.69201,
+      "hit_after": 0.36043000000000003
+    },
+    "2000": {
+      "hit_before": 0.68787,
+      "hit_after": 0.33584
+    }
+  },
+  "seeds": 10,
+  "params": {
+    "n_phase": 10000,
+    "V": 256,
+    "H": 64,
+    "W": 256,
+    "frames_main": 32
+  }
+}
